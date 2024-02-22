@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roman Numeral Converter</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/roman-favicon.png" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <nav id="navbar">
+            <a id='header-logo-anchor' href='https://www.freecodecamp.org' target='_blank'>
+                <picture>
+                    <source media="(max-width: 600px)"
+                        srcset="https://d33wubrfki0l68.cloudfront.net/bbfa33a202e8612d49b6c1ed05c1fdd8e4001566/bbdd1/img/fcc_secondary_small.svg"/>
+                    <img src="https://d33wubrfki0l68.cloudfront.net/774b60156d8f103170dc66f3ad10310941114653/da262/img/fcc_secondary_large.svg" alt="FCC Header Logo" style="height: 30px;" />
+                </picture>
+            </a>
+            <ul id="navbar-ul">
+                <li class="navbar-li">
+                    <a href="https://github.com/glovek08" class="navbar-anchor" target="_blank">MY GITHUB</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main id="main">
+        <h1 id="main-title">ROMAN NUMERAL CONVERTER</h1>
+        <div id='main-container'>
+            <div class="text-container grid-item">
+                <h2 id="text-container-title">So WTF are roman numerals.</h2>
+                <p>
+                    Roman numerals are a numeral system that originated in ancient Rome and remained the usual way of
+                    writing numbers
+                    throughout Europe well into the Late Middle Ages. Numbers are written with combinations of letters
+                    from the
+                    Latin alphabet, each letter with a fixed integer value. Modern style uses only these seven:
+                </p>
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th>I</th>
+                            <th>V</th>
+                            <th>X</th>
+                            <th>L</th>
+                            <th>C</th>
+                            <th>D</th>
+                            <th>M</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>10</td>
+                            <td>50</td>
+                            <td>100</td>
+                            <td>500</td>
+                            <td>1K</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a class="source" href="https://en.wikipedia.org/wiki/Roman_numerals" target="_blank">Wikipedia</a>
+            </div>
+
+            <div id="input-container" class="grid-item">
+                <h2>CONVERT DECIMAL TO ROMAN NUMERALS</h2>
+                <div id="input-btn-div">
+                    <input type='number' id="number" min='1' max="3999" placeholder="ENTER YOUR NUMBER" />
+                    <button type="button" id="convert-btn">CONVERT</button>
+                </div>
+                <div id="output"></div>
+            </div>
+
+            <div class="text-container grid-item full-width-grid-item">
+                <p>
+                    Roman numerals of course were widely used for a shit ton of purposes, but one of the coolest in my
+                    opinion is the
+                    legion number, in the Roman legions, numerals were used to denote the legion number, the cohort
+                    number, and the century number.
+                    The Roman military structure was highly organized and hierarchical, and numerals played a crucial
+                    role in identifying and
+                    organizing different units.
+                </p>
+                <ul id="legion-numerals">
+                    <li class="li-header">Legion Number:</li>
+                    <p>
+                        The Roman legions were numbered with Roman numerals, typically from I to XXX (1 to 30). Each
+                        legion had its own
+                        unique numeral designation, and this numeral was an essential part of the legion's identity. For
+                        example,
+                        Legio III Augusta represented the third legion, and Legio X Fretensis represented the tenth
+                        legion.
+                    </p>
+                    <li class="li-header">Cohort Number:</li>
+                    <p>
+                        Legions were subdivided into cohorts, and each cohort was assigned a specific numeral. A legion
+                        typically had ten cohorts, and the cohort numerals ranged from I to X. For instance, in Legio
+                        III Augusta, the first cohort would be Cohors I, the second Cohors II, and so on.
+                    </p>
+                    <li class="li-header">Century Number:</li>
+                    <p>
+                        The basic tactical unit within a Roman legion was the century, which consisted of approximately
+                        80 to 100 men. Centuries were numbered within each cohort using Roman numerals. The first
+                        century of the first cohort, for example, would be known as Centuria I, while the second century
+                        of the second cohort would be Centuria II.
+                    </p>
+                </ul>
+                <p class="source">Partly generated by ChatGPT.</p>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <img src="https://d33wubrfki0l68.cloudfront.net/bbfa33a202e8612d49b6c1ed05c1fdd8e4001566/bbdd1/img/fcc_secondary_small.svg" alt="FreeCodeCamp Footer Logo" id="footer-logo" width="50"/>
+        <p>By GBBARN. 2024</p>
+    </footer>
+</body>
+<script src="/javascript/script.js"></script>
+
+</html>
